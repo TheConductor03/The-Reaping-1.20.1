@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "reaping",
+	"version": "${version}",
+	"name": "The Reaping",
+	"description": "It yearns for souls. Bring them to It. This mod is all about a bunch of cool stuff like scythes, statues, etc.!",
+	"authors": [
+		"TheConductor..."
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/reaping/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.conductor.reaping.Reaping"
+		],
+		"client": [
+			"net.conductor.reaping.ReapingClient"
+		],
+		"fabric-datagen": [
+			"net.conductor.reaping.ReapingDataGenerator"
+		]
+	},
+	"mixins": [
+		"reaping.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
